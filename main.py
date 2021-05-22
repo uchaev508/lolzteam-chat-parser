@@ -30,7 +30,7 @@ for first_run in driver.find_elements_by_xpath("//*[starts-with(@id, 'chatboxMes
     antiduplicate.append(first_run)
 for first_run in driver.find_elements_by_xpath("//*[starts-with(@id, 'chatboxMessage_')]/span[2]/a"):
     antiduplicate.append(first_run)
-
+ 
 while True:
     for message in driver.find_elements_by_xpath("//*[starts-with(@id, 'chatboxMessage_')]/span[2]/div"):
         for username in driver.find_elements_by_xpath("//*[starts-with(@id, 'chatboxMessage_')]/span[2]/a"):
